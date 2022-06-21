@@ -173,7 +173,7 @@ def _parse_raw_author_and_title(raw_clipping_list: List) -> Tuple[str, str]:
         )
 
     title = raw_clipping_list[0].replace(author, "").strip().replace(" ()", "")
-
+    print(author,title,raw_clipping_list)
     return author, title
 
 
